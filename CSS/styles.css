@@ -1,0 +1,149 @@
+/* =============== Google Font =============== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+/* =============== NORMALIZE CSS =============== */
+
+@import url(./normalize.css);
+
+/* ========= Universal Selector ========= */
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+* img {
+    height: auto;
+    width: 100%;
+}
+
+body {
+    font-family: 'ubuntu', Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    color: var(--color-body);
+}
+
+html {
+    /* 10x font size of root element */
+    font-size: 62.5%;
+}
+
+
+/* ========= CSS Color Variable ========= */
+
+:root {
+    --color-primary: #dc143c;
+    --border-radius: 30px;
+}
+
+
+/* Navbar Styling */
+
+.nav {
+    position: fixed;
+    width: 100%;
+    padding: 1.5rem 0;
+    background: var(--color-primary);
+}
+
+.nav__item>a {
+    color: #fff;
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-left: 2.5rem;
+}
+
+.nav__brand>a {
+    color: #fff;
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+
+.list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.nav__item {
+    display: inline-block;
+}
+
+.max__width {
+    max-width: 1300px;
+    padding: 0 8rem;
+    margin: auto;
+}
+
+.nav .max__width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/*========== Font and typography ==========*/
+
+
+/*========== Font weight ==========*/
+
+
+/*========== z index ==========*/
+
+
+/* Responsive typography */
+
+
+/*=============== THEME ===============*/
+
+
+/*========== Variables Dark theme ==========*/
+
+
+/*=============== REUSABLE CSS CLASSES ===============*/
+
+.main {
+    overflow: hidden;
+    /* For the animations ScrollReveal*/
+}
+
+
+/*=============== HEADER & NAV ===============*/
+
+
+/* Change background header */
+
+
+/* Active link */
+
+
+/*=============== HOME ===============*/
+
+
+/*=============== BUTTON ===============*/
+
+
+/*=============== POPULAR ===============*/
+
+
+/*=============== VALUE ===============*/
+
+
+/*Rotate icon and add shadows*/
+
+
+/*=============== CONTACT ===============*/
+
+
+/*=============== SUBSCRIBE ===============*/
+
+
+/*=============== FOOTER ===============*/
