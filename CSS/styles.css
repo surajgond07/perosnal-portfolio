@@ -28,7 +28,7 @@
 body {
     font-family: 'ubuntu', Arial, Helvetica, sans-serif;
     font-size: 1.5rem;
-    line-height: 1.5;
+    /* line-height: 1.5; */
     color: var(--color-body);
 }
 
@@ -41,31 +41,56 @@ html {
 /* ========= CSS Color Variable ========= */
 
 :root {
-    --color-primary: #dc143c;
+    --color-primary: #FD023E;
+    /* --color-primary: #dc143c; */
     --border-radius: 30px;
 }
 
 
-/* Navbar Styling */
+/*=============== HEADER & NAV ===============*/
 
 .nav {
     position: fixed;
     width: 100%;
+    padding: 3rem 0;
+    transition: all 0.3s ease;
+    /* background: var(--color-primary); */
+}
+
+.nav.sticky {
     padding: 1.5rem 0;
     background: var(--color-primary);
 }
 
+.nav.sticky .nav__item>a:hover {
+    color: black;
+}
+
 .nav__item>a {
     color: #fff;
-    font-size: 1.8rem;
+    font-size: 1.9rem;
     font-weight: 500;
     margin-left: 2.5rem;
+    transition: 0.3s ease;
+}
+
+.nav.sticky .nav__brand>a span {
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.nav__item>a:hover {
+    color: var(--color-primary);
 }
 
 .nav__brand>a {
     color: #fff;
     font-size: 3.5rem;
     font-weight: 600;
+}
+
+.nav__brand>a span {
+    color: var(--color-primary);
 }
 
 .list {
@@ -87,6 +112,40 @@ html {
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+
+/*=============== HOME ===============*/
+
+.home {
+    display: flex;
+    background: black;
+    height: 100vh;
+    color: #fff;
+}
+
+.max--width {
+    margin: auto 0 auto 4rem;
+}
+
+.home__text-1 {
+    font-size: 2.7rem;
+}
+
+.home__text-2 {
+    font-size: 7.5rem;
+    font-weight: 600;
+    margin-left: -3px;
+}
+
+.home__text-3 {
+    font-size: 3rem;
+    margin: .5rem 0;
+}
+
+.home__text-3>span {
+    color: var(--color-primary);
+    font-weight: 500;
 }
 
 
@@ -116,16 +175,10 @@ html {
 }
 
 
-/*=============== HEADER & NAV ===============*/
-
-
 /* Change background header */
 
 
 /* Active link */
-
-
-/*=============== HOME ===============*/
 
 
 /*=============== BUTTON ===============*/
