@@ -1,0 +1,13 @@
+max-width   = 
+menu        =  navbar__menu
+navbar      =  nav
+menu-btn    =  nav__toggler
+text-1      =  home__text-1
+max-width   =  max-width
+.menu li    = nav__item
+
+logo             =  nav__brand
+.nav__toggler    =
+
+menu-btn         =  nav__item
+.nav .menu .item = nav__item
