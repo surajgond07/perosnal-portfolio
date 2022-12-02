@@ -7,7 +7,12 @@ max-width   =  max-width
 .menu li    = nav__item
 
 logo             =  nav__brand
-.nav__toggler    =
+    =
 
 menu-btn         =  nav__item
+menu-btn         =.nav__toggler
 .nav .menu .item = nav__item
+
+
+// I use Grid colum
+and senter for image: 

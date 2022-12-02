@@ -1,284 +1,437 @@
-/* =============== Google Font =============== */
-
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
-
-/* =============== NORMALIZE CSS =============== */
-
-@import url(./normalize.css);
-
-/* ========= Universal Selector ========= */
-
-* {
-    margin: 0;
-    padding: 0;
-    text-decoration: none;
-}
-
-*,
-*::after,
-*::before {
-    box-sizing: border-box;
-}
-
-* img {
-    height: auto;
-    width: 100%;
-}
-
-body {
-    font-family: 'ubuntu', Arial, Helvetica, sans-serif;
-    font-size: 1.5rem;
-    /* line-height: 1.5; */
-    color: var(--color-body);
-}
-
-html {
-    /* 10x font size of root element */
-    font-size: 62.5%;
-}
-
-
-/* ========= CSS Color Variable ========= */
-
-:root {
-    --color-primary: #FD023E;
-    /* --color-primary: #dc143c; */
-    --border-radius: 30px;
-}
-
-
-/*=============== HEADER & NAV ===============*/
-
-.nav {
-    position: fixed;
-    width: 100%;
-    padding: 3rem 0;
-    transition: all 0.3s ease;
-    /* background: var(--color-primary); */
-}
-
-.nav.sticky {
-    padding: 1.5rem 0;
-    background: var(--color-primary);
-}
-
-.nav.sticky .nav__item>a:hover {
-    color: black;
-}
-
-.nav__item>a {
-    color: #fff;
-    font-size: 1.9rem;
-    font-weight: 500;
-    margin-left: 2.5rem;
-    transition: 0.3s ease;
-}
-
-.nav.sticky .nav__brand>a span {
-    color: #fff;
-    transition: all 0.3s ease;
-}
-
-.nav__item>a:hover {
-    color: var(--color-primary);
-}
-
-.nav__brand>a {
-    color: #fff;
-    font-size: 3.5rem;
-    font-weight: 600;
-}
-
-.nav__brand>a span {
-    color: var(--color-primary);
-}
-
-.list {
-    list-style: none;
-    padding-left: 0;
-}
-
-.nav__item {
-    display: inline-block;
-}
-
-
-/* responsive media  */
-
-
-/* @media (max-width: 947px) {
-    .nav__item {
-        display: block;
-        text-align: center;
-    }
-    .nav__item>a {
-        display: inline-block;
-        margin: 2rem 0;
-        font-size: 2.5rem;
-    }
-} */
-
-.max__width {
-    max-width: 1300px;
-    padding: 0 8rem;
-    margin: auto;
-}
-
-
-/* @media (max-width: 947px) {
-    .max__width {
-        padding: 0 5rem;
-    }
-} */
-
-.nav .max__width {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-
-/* toggler button styling  */
-
-.nav__toggler {
-    color: #fff;
-    font-size: 2.3rem;
-    cursor: pointer;
-    display: none;
-}
-
-.nav__toggler i.active:before {
-    content: "\f00d";
-}
-
-
-/* 
-@media (max-width: 947px) {
-    .nav__toggler {
-        display: block;
-        z-index: 999;
-    }
-} */
-
-
-/*=============== HOME ===============*/
-
-.home {
-    display: flex;
-    background: black;
-    height: 100vh;
-    color: #fff;
-    min-height: 50rem;
-}
-
-.max--width {
-    margin: auto 0 auto 4rem;
-}
-
-.home__text-1 {
-    font-size: 2.7rem;
-}
-
-.home__text-2 {
-    font-size: 7.5rem;
-    font-weight: 600;
-    margin-left: -3px;
-}
-
-.home__text-3 {
-    font-size: 3rem;
-    margin: .5rem 0;
-}
-
-.home__text-3>span {
-    color: var(--color-primary);
-    font-weight: 500;
-}
-
-
-/* responsive media query start for mobile & Tablet  */
-
-@media (max-width: 947px) {
-    .max-width {
-        padding: 0 5rem;
-    }
-    .nav__toggler {
-        display: block;
-        z-index: 999;
-    }
-    .navbar__menu {
-        position: fixed;
-        height: 100vh;
-        width: 100%;
-        background: #111;
-        left: -100%;
-        top: 0px;
-        padding-top: 8rem;
-        transition: all 0.3s ease;
-    }
-    .navbar__menu.active {
-        left: 0;
-    }
-    .nav__item {
-        display: block;
-        text-align: center;
-    }
-    .nav__item>a {
-        display: inline-block;
-        margin: 2rem 0;
-        font-size: 2.5rem;
-    }
-}
-
-
-/*========== Font and typography ==========*/
-
-
-/*========== Font weight ==========*/
-
-
-/*========== z index ==========*/
-
-
-/* Responsive typography */
-
-
-/*=============== THEME ===============*/
-
-
-/*========== Variables Dark theme ==========*/
-
-
-/*=============== REUSABLE CSS CLASSES ===============*/
-
-.main {
-    overflow: hidden;
-    /* For the animations ScrollReveal*/
-}
-
-
-/* Change background header */
-
-
-/* Active link */
-
-
-/*=============== BUTTON ===============*/
-
-
-/*=============== POPULAR ===============*/
-
-
-/*=============== VALUE ===============*/
-
-
-/*Rotate icon and add shadows*/
-
-
-/*=============== CONTACT ===============*/
-
-
-/*=============== SUBSCRIBE ===============*/
-
-
-/*=============== FOOTER ===============*/
+ /* =============== Google Font =============== */
+ 
+ @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+ /* =============== NORMALIZE CSS =============== */
+ 
+ @import url(./normalize.css);
+ /* ========= Universal Selector ========= */
+ 
+ * {
+     margin: 0;
+     padding: 0;
+     text-decoration: none;
+ }
+ 
+ *,
+ *::after,
+ *::before {
+     box-sizing: border-box;
+ }
+ 
+ * img {
+     height: auto;
+     width: 100%;
+ }
+ 
+ body {
+     font-family: 'ubuntu', Arial, Helvetica, sans-serif;
+     font-size: 1.5rem;
+     /* line-height: 1.5; */
+     color: var(--color-body);
+ }
+ 
+ html {
+     /* 10x font size of root element */
+     font-size: 62.5%;
+ }
+ /* ========= CSS Color Variable ========= */
+ 
+ :root {
+     --color-primary: #FD023E;
+     /* --color-primary: #dc143c; */
+     --border-radius: 30px;
+ }
+ /* All Similar Content Styling Codes */
+ 
+ section {
+     padding: 100px 0;
+ }
+ 
+ .max-width {
+     max-width: 1300px;
+     padding: 0 80px;
+     margin: auto;
+ }
+ /* 
+        .about, .services, .skills, .teams, .contact, footer{
+            font-family: 'Poppins', sans-serif;
+        }
+        .about .about-content,
+        .services .serv-content,
+        .skills .skills-content,
+        .contact .contact-content{
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between; */
+ /* All Similar Content Styling Codes End*/
+ /*=============== Heder & Nav Start ===============*/
+ 
+ .nav {
+     position: fixed;
+     width: 100%;
+     z-index: 999;
+     padding: 3rem 0;
+     transition: all 0.3s ease;
+     /* background: var(--color-primary); */
+ }
+ 
+ .nav.sticky {
+     padding: 1.5rem 0;
+     background: var(--color-primary);
+ }
+ 
+ .nav.sticky .nav__item>a:hover {
+     color: black;
+ }
+ 
+ .nav__item>a {
+     color: #fff;
+     font-size: 1.9rem;
+     font-weight: 500;
+     margin-left: 2.5rem;
+     transition: 0.3s ease;
+ }
+ 
+ .nav.sticky .nav__brand>a span {
+     color: #fff;
+     transition: all 0.3s ease;
+ }
+ 
+ .nav__item>a:hover {
+     color: var(--color-primary);
+ }
+ 
+ .nav__brand>a {
+     color: #fff;
+     font-size: 3.5rem;
+     font-weight: 600;
+ }
+ 
+ .nav__brand>a span {
+     color: var(--color-primary);
+ }
+ 
+ .list {
+     list-style: none;
+     padding-left: 0;
+ }
+ 
+ .nav__item {
+     display: inline-block;
+ }
+ /* responsive media query start for mobile & Tablet  */
+ 
+ @media (max-width: 947px) {
+     .nav__item {
+         display: block;
+         text-align: center;
+     }
+     .nav__item>a {
+         display: inline-block;
+         margin: 2rem 0;
+         font-size: 2.5rem;
+     }
+ }
+ 
+ .max__width {
+     max-width: 1300px;
+     padding: 0 8rem;
+     margin: auto;
+ }
+ 
+ @media (max-width: 1104px) {
+     .max__width {
+         margin-left: 0;
+     }
+ }
+ 
+ @media (max-width: 947px) {
+     .max__width {
+         padding: 0 5rem;
+     }
+ }
+ 
+ @media (max-width: 500px) {
+     .home__text-2 {
+         font-size: 5rem;
+     }
+     .home__text-3 {
+         font-size: 2.7rem;
+     }
+ }
+ /*
+responsive media query end for mobile & Tablet  */
+ 
+ .nav .max__width {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+ }
+ /*=============== Heder & Nav End ===============*/
+ /*========== Toogler Button styling Start ==========*/
+ 
+ .nav__toggler {
+     color: #fff;
+     font-size: 2.3rem;
+     cursor: pointer;
+     display: none;
+ }
+ 
+ .nav__toggler i.active:before {
+     content: "\f00d";
+ }
+ 
+ @media (max-width: 947px) {
+     .nav__toggler {
+         display: block;
+         z-index: 999;
+     }
+ }
+ /*========== Toogler Button styling End ==========*/
+ /*========== Home Section Start ==========*/
+ 
+ .home {
+     display: flex;
+     background: black;
+     height: 100vh;
+     color: #fff;
+     min-height: 50rem;
+ }
+ 
+ .home .max__width {
+     /* margin: auto 0 auto 4rem; */
+     width: 100%;
+     display: flex;
+ }
+ 
+ .home__text-1 {
+     font-size: 2.7rem;
+ }
+ 
+ .home__text-2 {
+     font-size: 7.5rem;
+     font-weight: 600;
+     margin-left: -3px;
+ }
+ 
+ .home__text-3 {
+     font-size: 3rem;
+     margin: .5rem 0;
+ }
+ /* responsive media query start for mobile & Tablet  */
+ 
+ @media (max-width:947px) {
+     .home__text-2 {
+         font-size: 7rem;
+     }
+     .home__text-3 {
+         font-size: 3.5rem;
+     }
+ }
+ 
+ @media (max-width: 991px) {
+     .max__width {
+         padding: 0 5rem;
+     }
+     .home__text-2 {
+         font-size: 7.5rem;
+         font-weight: 600;
+         margin-left: -3px;
+     }
+     .home__text-3 {
+         font-size: 3rem;
+         margin: .5rem 0;
+     }
+ }
+ 
+ @media (max-width: 690px) {
+     .max__width {
+         padding: 0 2.3rem;
+     }
+     .home__text-2 {
+         font-size: 6rem;
+     }
+     .home__text-3 {
+         font-size: 3.2rem;
+     }
+ }
+ 
+ @media (max-width: 500px) {
+     .home__text-2 {
+         font-size: 5rem;
+     }
+     .home__text-3 {
+         font-size: 2.7rem;
+     }
+ }
+ /* responsive media query end for mobile & Tablet  */
+ 
+ .home__text-3>span {
+     color: var(--color-primary);
+     font-weight: 500;
+ }
+ 
+ .btn {
+     display: inline-block;
+     background: var(--color-primary);
+     color: #fff;
+     border: 2px solid var(--color-primary);
+     font-size: 2.5rem;
+     padding: 1.2rem 3.6rem;
+     margin-top: 2rem;
+     border-radius: 6px;
+ }
+ /* .btn--primary {
+ } */
+ 
+ .btn:hover {
+     color: var(--color-primary);
+     background: none;
+ }
+ /* responsive media query start for mobile & Tablet  */
+ 
+ @media (max-width: 947px) {
+     .btn {
+         font-size: 2rem;
+         padding: 1rem 3rem;
+     }
+ }
+ 
+ @media (max-width: 690px) {
+     .max-width {
+         padding: 0 23px;
+     }
+     .btn {
+         font-size: 2rem;
+     }
+ }
+ /*========== Home Section End ==========*/
+ /*=============== Navbar for Mobile & Tablet Start ===============*/
+ 
+ @media (max-width: 947px) {
+     .navbar__menu {
+         position: fixed;
+         height: 100vh;
+         width: 100%;
+         background: #111;
+         left: -100%;
+         top: 0px;
+         padding-top: 8rem;
+         transition: all 0.3s ease;
+     }
+     .navbar__menu.active {
+         left: 0;
+     }
+ }
+ /*=============== Navbar for Mobile & Tablet End ===============*/
+ /*========== About Section Start ==========*/
+ 
+ .about,
+ .services {
+     font-family: 'poping', sans-serif;
+ }
+ 
+ section .title {
+     position: relative;
+     font-family: 'ubuntu', sans-serif;
+     text-align: center;
+     font-size: 4rem;
+     font-weight: 500;
+     margin-bottom: 6rem;
+     padding-bottom: 2rem;
+ }
+ 
+ section .title::before {
+     content: "";
+     position: absolute;
+     bottom: 0px;
+     left: 50%;
+     width: 180px;
+     height: 3px;
+     background: #111;
+     transform: translateX(-50%);
+ }
+ 
+ section .title::after {
+     position: absolute;
+     bottom: -8px;
+     left: 50%;
+     font-size: 20px;
+     color: crimson;
+     padding: 0 5px;
+     background: #fff;
+     transform: translateX(-50%);
+ }
+ 
+ .about .title::after {
+     content: "who i am";
+ }
+ 
+ .grid {
+     display: grid;
+ }
+ 
+ .grid--1x2 {}
+ 
+ .about__image>img {
+     height: 35rem;
+     width: 35rem;
+     object-fit: cover;
+     border-radius: .6rem;
+     display: block;
+     margin: 0 auto;
+ }
+ 
+ .about__content {}
+ 
+ .about__content {
+     margin-top: 3rem;
+     font-size: 3rem;
+     font-weight: 600;
+     margin-bottom: 1rem;
+     text-align: center;
+ }
+ 
+ .about__content>span {
+     color: var(--color-primary);
+ }
+ 
+ .column__right>p {
+     text-align: justify;
+     font-size: 2rem;
+     line-height: 1.4;
+ }
+ 
+ .btn--secondary {
+     font-size: 2rem;
+     font-weight: 500;
+     padding: 1rem 3rem;
+ }
+ 
+ @media screen and (min-width: 1024px) {
+     .grid--1x2 {
+         grid-template-columns: repeat(2, 1fr);
+     }
+     .about__image>img {
+         height: 40rem;
+         width: 40rem;
+         object-fit: cover;
+         border-radius: .6rem;
+     }
+ }
+ /*========== About Section End ==========*/
+ 
+ .main {
+     overflow: hidden;
+     /* For the animations ScrollReveal*/
+ }
+ /* Change background header */
+ /* Active link */
+ /*=============== BUTTON ===============*/
+ /*=============== POPULAR ===============*/
+ /*=============== VALUE ===============*/
+ /*Rotate icon and add shadows*/
+ /*=============== Contact ===============*/
+ /*=============== Sunscribe ===============*/
+ /*=============== Footer ===============*/
