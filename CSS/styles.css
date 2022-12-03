@@ -52,18 +52,20 @@
      padding: 0 80px;
      margin: auto;
  }
- /* 
-        .about, .services, .skills, .teams, .contact, footer{
-            font-family: 'Poppins', sans-serif;
-        }
-        .about .about-content,
-        .services .serv-content,
-        .skills .skills-content,
-        .contact .contact-content{
-            display: flex;
-            flex-wrap: wrap;
-            align-items: center;
-            justify-content: space-between; */
+ 
+ .main {
+     overflow: hidden;
+     /* For the animations ScrollReveal*/
+ }
+ 
+ .about,
+ .services,
+ .skills,
+ .teams,
+ .contact,
+ footer {
+     font-family: 'Poppins', sans-serif;
+ }
  /* All Similar Content Styling Codes End*/
  /*=============== Heder & Nav Start ===============*/
  
@@ -372,8 +374,6 @@ responsive media query end for mobile & Tablet  */
      display: grid;
  }
  
- .grid--1x2 {}
- 
  .about__image>img {
      height: 35rem;
      width: 35rem;
@@ -421,10 +421,81 @@ responsive media query end for mobile & Tablet  */
      }
  }
  /*========== About Section End ==========*/
+ /*========== Services Section Start ==========*/
  
- .main {
-     overflow: hidden;
-     /* For the animations ScrollReveal*/
+ .services {
+     color: #fff;
+     background: #111;
+ }
+ 
+ .services .title::before {
+     background: #fff;
+ }
+ 
+ .services .title::after {
+     background: #111;
+     content: "what i provide";
+ }
+ 
+ .container {
+     display: grid;
+     gap: 2rem;
+ }
+ 
+ .services__card {
+     /* width: calc(33% - 20px); */
+     background: #222;
+     text-align: center;
+     border-radius: 6px;
+     padding: 5rem 2.5rem;
+     cursor: pointer;
+     line-height: 1.5;
+ }
+ 
+ .services__card i {
+     font-size: 5rem;
+     color: var(--color-primary);
+     transition: color 0.3s ease;
+ }
+ 
+ .services__heading {
+     font-size: 2.5rem;
+     font-weight: 500;
+     margin: 1rem 0 .7rem 0;
+ }
+ 
+ .services__box {
+     transition: all 0.3s ease;
+ }
+ 
+ .services__box:hover {
+     transform: scale(1.05);
+ }
+ 
+ .services__card:hover {
+     background: var(--color-primary);
+     transition: color 0.3s ease;
+ }
+ 
+ .services__card:hover i {
+     color: #fff;
+ }
+ 
+ .services__box P {
+     font-size: 1.7rem;
+ }
+ 
+ @media screen and (min-width: 690px) {
+     .grid--1x3 {
+         grid-template-columns: repeat(2, 1fr);
+     }
+ }
+ /*========== Services Section Start ==========*/
+ 
+ @media screen and (min-width: 1024px) {
+     .grid--1x3 {
+         grid-template-columns: repeat(3, 1fr);
+     }
  }
  /* Change background header */
  /* Active link */
