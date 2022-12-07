@@ -33,6 +33,7 @@
  html {
      /* 10x font size of root element */
      font-size: 62.5%;
+     scroll-behavior: smooth;
  }
  
  h1,
@@ -64,7 +65,7 @@
  
  @media screen and (min-width: 1024px) {
      body {
-         font-size: 1.8rem;
+         font-size: 1.5rem;
      }
      h1 {
          font-size: 8rem;
@@ -463,16 +464,19 @@ responsive media query end for mobile & Tablet  */
  /*========== About Section End ==========*/
  /*========== Services Section Start ==========*/
  
- .services {
+ .services,
+ .teams {
      color: #fff;
      background: #111;
  }
  
- .services .title::before {
+ .services .title::before,
+ .teams .title::before {
      background: #fff;
  }
  
- .services .title::after {
+ .services .title::after,
+ .teams .title::after {
      background: #111;
      content: "what i provide";
  }
@@ -611,6 +615,79 @@ responsive media query end for mobile & Tablet  */
      /* margin-bottom: 1rem; */
  }
  /*========== Skills Section End ==========*/
+ /*========== Teams Section Start ==========*/
+ 
+ .teams .title::after {
+     content: "who with me";
+ }
+ 
+ .teams__card {
+     background: #222;
+     border-radius: 6px;
+     padding: 2.5rem 3.5rem;
+     text-align: center;
+     transition: all 0.3s ease;
+ }
+ 
+ .teams__card:hover {
+     background: var(--color-primary);
+ }
+ 
+ .teams__box {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     transition: all 0.3s ease;
+ }
+ 
+ .teams__card:hover .teams__box {
+     transform: scale(1.1);
+ }
+ 
+ .teams .carousel .teams__card img {
+     height: 15rem;
+     width: 15rem;
+     object-fit: cover;
+     border-radius: 50%;
+     border: 5px solid var(--color-primary);
+     transition: all 0.3s ease;
+ }
+ 
+ .teams .carousel .teams__card img:hover {
+     border-color: #fff;
+ }
+ 
+ .teams__text {
+     font-size: 2.5rem;
+     font-weight: 500;
+     margin: 1rem 0 .7rem 0;
+ }
+ 
+ .owl-dots {
+     text-align: center;
+     margin-top: 2rem;
+ }
+ 
+ .owl-dot {
+     height: 1.3rem;
+     width: 1.3rem;
+     outline: none!important;
+     border-radius: 50%;
+     margin: 0 5px;
+     border: 2px solid var(--color-primary)!important;
+     transition: all 0.3s ease;
+ }
+ 
+ .owl-dot.active {
+     width: 3.5rem;
+     border-radius: 1.4rem;
+ }
+ 
+ .owl-dot.active:hover {
+     background: var(--color-primary)!important;
+ }
+ /*========== Teams Section End ==========*/
  /* Change background header */
  /* Active link */
  /*=============== BUTTON ===============*/
