@@ -326,9 +326,8 @@ responsive media query end for mobile & Tablet  */
      padding: 1.2rem 3.6rem;
      margin-top: 2rem;
      border-radius: 6px;
+     transition: all 0.3s ease;
  }
- /* .btn--primary {
- } */
  
  .btn:hover {
      color: var(--color-primary);
@@ -457,8 +456,6 @@ responsive media query end for mobile & Tablet  */
      .about__image>img {
          height: 40rem;
          width: 40rem;
-         object-fit: cover;
-         border-radius: .6rem;
      }
  }
  /*========== About Section End ==========*/
@@ -612,7 +609,6 @@ responsive media query end for mobile & Tablet  */
  .btn--skills {
      font-size: 1.8rem;
      padding: .8rem 1.6rem;
-     /* margin-bottom: 1rem; */
  }
  /*========== Skills Section End ==========*/
  /*========== Teams Section Start ==========*/
@@ -688,12 +684,89 @@ responsive media query end for mobile & Tablet  */
      background: var(--color-primary)!important;
  }
  /*========== Teams Section End ==========*/
- /* Change background header */
- /* Active link */
- /*=============== BUTTON ===============*/
- /*=============== POPULAR ===============*/
- /*=============== VALUE ===============*/
- /*Rotate icon and add shadows*/
- /*=============== Contact ===============*/
- /*=============== Sunscribe ===============*/
- /*=============== Footer ===============*/
+ /*========== Contact Section Start ==========*/
+ 
+ .contact .title::after {
+     content: "get in touch";
+ }
+ 
+ .contact__column-left>p {
+     text-align: justify;
+     font-size: 1.8rem;
+     line-height: 1.4;
+ }
+ 
+ .contact__icons {
+     margin: 1rem 0;
+ }
+ 
+ .contact__rows {
+     display: flex;
+     height: 6.5rem;
+     align-items: center;
+ }
+ 
+ .contact__info {
+     font-size: 1.8rem;
+     margin-left: 3rem;
+ }
+ 
+ .contact__rows i {
+     font-size: 2.5rem;
+     color: var(--color-primary);
+ }
+ 
+ .contact__info .head {
+     font-weight: 600;
+ }
+ 
+ .contact__info .sub-title {
+     color: #333;
+ }
+ 
+ .contact__fields {
+     display: flex;
+ }
+ 
+ .contact__fields,
+ .contact__field {
+     height: 4.5rem;
+     width: 100%;
+     margin-bottom: 1.5rem;
+ }
+ 
+ .textarea {
+     height: 8rem;
+     width: 100%;
+ }
+ 
+ textarea {
+     padding-top: 1rem;
+     resize: none;
+ }
+ 
+ .contact__fields .name {
+     margin-right: 1rem;
+ }
+ 
+ .contact__fields .email {
+     margin-left: 1rem;
+ }
+ 
+ input,
+ textarea {
+     height: 100%;
+     width: 100%;
+     border: 1px solid lightgray;
+     border-radius: 6px;
+     outline: none;
+     padding: 0 1.5rem;
+     font-size: 1.8rem;
+ }
+ 
+ .btn--form {
+     font-size: 1.8rem;
+     padding: 1.4rem 1.6rem;
+     margin-top: 0;
+ }
+ /*========== Contact Section End ==========*/
