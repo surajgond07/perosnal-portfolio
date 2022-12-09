@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <!-- created by Suraj Infotech  -->
-<html lang="en">
+<html lang="zxx">
 
 <head>
     <meta charset="UTF-8">
@@ -37,7 +37,7 @@
     <!-- ===============SCROLL-UP=============== -->
     <div class="scroll-up-btn">
         <i class="fas fa-angle-up">            
-        </i>
+                </i>
         <!-- ===============SCROLL-UP=============== -->
     </div>
     <!-- ===============NAVBAR=============== -->
@@ -49,12 +49,12 @@
                     <a href="#">Portfo<span>lio.</span></a>
                 </div>
                 <ul class="list navbar__menu">
-                    <li class="nav__item"><a href="#home">Home</a></li>
-                    <li class="nav__item"><a href="#about">About</a></li>
-                    <li class="nav__item"><a href="#services">Services</a></li>
-                    <li class="nav__item"><a href="#skills">Skill</a></li>
-                    <li class="nav__item"><a href="#teams">Teams</a></li>
-                    <li class="nav__item"><a href="#contact">Contact</a></li>
+                    <li class="nav__item"><a href="#home" class="nav__toggler">Home</a></li>
+                    <li class="nav__item"><a href="#about" class="nav__toggler">About</a></li>
+                    <li class="nav__item"><a href="#services" class="nav__toggler">Services</a></li>
+                    <li class="nav__item"><a href="#skills" class="nav__toggler">Skill</a></li>
+                    <li class="nav__item"><a href="#teams" class="nav__toggler">Teams</a></li>
+                    <li class="nav__item"><a href="#contact" class="nav__toggler">Contact</a></li>
                 </ul>
                 <div class="nav__toggler">
                     <i class="fas fa-bars"></i>
@@ -63,7 +63,7 @@
         </nav>
     </header>
     <!--=============== HOME SECTION START ===============-->
-    <section class="home" id="home">
+    <div class="home" id="home">
         <div class="max__width">
             <div class="home__content">
                 <div class="home__text-1">Hello, my name is</div>
@@ -72,20 +72,18 @@
                 <a class="btn btn--primary" href="#">Hire me</a>
             </div>
         </div>
-    </section>
+    </div>
 
     <!--=============== HOME SECTION END ===============-->
 
     <!--=============== ABOUT SECTION START ===============-->
-    <section class="about" id="about">
+    <div class="about" id="about">
         <article>
             <div class="max-width">
                 <h2 class="title">About me</h2>
                 <div class="grid grid--1x2 ">
-                    <picture>
-                        <div class="about__image">
-                            <img src="images/profile-suraj.jpg" alt="">
-                        </div>
+                    <picture class="about__image">
+                        <img src="images/profile-suraj.jpg" alt="">
                     </picture>
                     <div class="column__right">
                         <div class="about__content">I'm Suraj and I'm a <span class="typing-2"></span></div>
@@ -97,11 +95,11 @@
             </div>
         </article>
 
-    </section>
+    </div>
     <!--=============== ABOUT SECTION END ===============-->
 
     <!--=============== SERVICE SECTION START ===============-->
-    <section class="services" id="services">
+    <div class="services" id="services">
         <article>
             <div class="max-width">
                 <h2 class="title">My Services</h2>
@@ -130,10 +128,9 @@
                     </div>
                 </div>
             </div>
-            </div>
         </article>
 
-    </section>
+    </div>
     <!--=============== SERVICE SECTION END ===============-->
     <!--=============== SKILLS SECTION START ===============-->
 
@@ -188,6 +185,7 @@
 
                 </div>
             </div>
+        </div>
     </section>
     <!--=============== SKILLS SECTION END ===============-->
 
@@ -198,35 +196,35 @@
             <div class="carousel owl-carousel">
                 <div class="teams__card">
                     <div class="teams__box">
-                        <img src="/images/profile-suraj.jpg" alt="">
+                        <img src="images/profile-suraj.jpg" alt="">
                         <div class="teams__text">Someone name</div>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
                     </div>
                 </div>
                 <div class="teams__card">
                     <div class="teams__box">
-                        <img src="/images/profile-2.jpeg" alt="">
+                        <img src="images/profile-2.jpeg" alt="">
                         <div class="teams__text">Someone name</div>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
                     </div>
                 </div>
                 <div class="teams__card">
                     <div class="teams__box">
-                        <img src="/images/profile-3.jpeg" alt="">
+                        <img src="images/profile-3.jpeg" alt="">
                         <div class="teams__text">Someone name</div>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
                     </div>
                 </div>
                 <div class="teams__card">
                     <div class="teams__box">
-                        <img src="/images/profile-4.jpeg" alt="">
+                        <img src="images/profile-4.jpeg" alt="">
                         <div class="teams__text">Someone name</div>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
                     </div>
                 </div>
                 <div class="teams__card">
                     <div class="teams__box">
-                        <img src="/images/profile-5.jpeg" alt="">
+                        <img src="images/profile-5.jpeg" alt="">
                         <div class="teams__text">Someone name</div>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
                     </div>
@@ -283,7 +281,7 @@
                             <input type="text" placeholder="Subject" required>
                         </div>
                         <div class="contact__field textarea">
-                            <textarea name="" id="" cols="30" rows="10" placeholder="Message.." required></textarea>
+                            <textarea name="textarea" cols="30" rows="10" placeholder="Message.." required></textarea>
                         </div>
                         <button class="btn btn--form" type="submit">Send message</button>
                     </form>
@@ -295,7 +293,7 @@
 
     <!--=============== FOOTER SECTION START ===============-->
     <footer>
-        <span>Created By <a href="https://surajinfotech.com" targe="_blank">SurajInfotech</a> | <span class="far fa-copyright"> 2022 All rights reserved.</span></span>
+        <span>Created By <a href="https://surajinfotech.com" target="_blank">SurajInfotech</a> | <span class="far fa-copyright"> 2022 All rights reserved.</span></span>
     </footer>
     <!--=============== FOOTER SECTION END ===============-->
 

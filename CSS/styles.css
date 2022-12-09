@@ -1,815 +1,882 @@
- /* =============== Google Font =============== */
- 
- @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
- /* =============== NORMALIZE CSS =============== */
- 
- @import url(./normalize.css);
- /* ========= Universal Selector ========= */
- 
- * {
-     margin: 0;
-     padding: 0;
-     text-decoration: none;
- }
- 
- *,
- *::after,
- *::before {
-     box-sizing: border-box;
- }
- 
- * img {
-     height: auto;
-     width: 100%;
- }
- 
- body {
-     font-family: 'ubuntu', Arial, Helvetica, sans-serif;
-     font-size: 1.5rem;
-     /* line-height: 1.5; */
-     color: var(--color-body);
- }
- 
- html {
-     /* 10x font size of root element */
-     font-size: 62.5%;
-     scroll-behavior: smooth;
- }
- 
- h1,
- h2,
- h3 {
-     color: var(--color-headings);
-     margin-bottom: 1rem;
-     line-height: 1.1;
- }
- 
- h1 {
-     font-size: 6rem;
- }
- 
- h2 {
-     font-size: 4rem;
- }
- 
- h3 {
-     font-size: 2.4rem;
-     font-weight: 600;
-     line-height: 1.3;
-     margin-bottom: 1rem;
- }
- 
- p {
-     margin-top: 0;
- }
- 
- @media screen and (min-width: 1024px) {
-     body {
-         font-size: 1.5rem;
-     }
-     h1 {
-         font-size: 8rem;
-     }
-     h2 {
-         font-size: 4rem;
-     }
-     h3 {
-         font-size: 2.4rem;
-     }
- }
- /* ========= CSS Color Variable ========= */
- 
+/* =============== Google Font =============== */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+/* =============== NORMALIZE CSS =============== */
+
+@import url(./normalize.css);
+
+/* ========= Universal Selector ========= */
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+* img {
+    height: auto;
+    width: 100%;
+}
+
+body {
+    font-family: 'ubuntu', Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+    /* line-height: 1.5; */
+    color: var(--color-body);
+}
+
+html {
+    /* 10x font size of root element */
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3 {
+    color: var(--color-headings);
+    margin-bottom: 1rem;
+    line-height: 1.1;
+}
+
+h1 {
+    font-size: 6rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: 1.3;
+    margin-bottom: 1rem;
+}
+
+p {
+    margin-top: 0;
+}
+
+@media screen and (min-width: 1024px) {
+    body {
+        font-size: 1.5rem;
+    }
+    h1 {
+        font-size: 8rem;
+    }
+    h2 {
+        font-size: 4rem;
+    }
+    h3 {
+        font-size: 2.4rem;
+    }
+}
+
+
+/* ========= CSS Color Variable ========= */
+
  :root {
-     --color-primary: #FD023E;
-     /* --color-primary: #dc143c; */
-     --border-radius: 30px;
- }
- /* All Similar Content Styling Codes */
- 
- section {
-     padding: 100px 0;
- }
- 
- .max-width {
-     max-width: 1300px;
-     padding: 0 80px;
-     margin: auto;
- }
- 
- .main {
-     overflow: hidden;
-     /* For the animations ScrollReveal*/
- }
- 
- .about,
- .services,
- .skills,
- .teams,
- .contact,
- footer {
-     font-family: 'Poppins', sans-serif;
- }
- /* All Similar Content Styling Codes End*/
- /*=============== Heder & Nav Start ===============*/
- 
- .nav {
-     position: fixed;
-     width: 100%;
-     z-index: 999;
-     padding: 3rem 0;
-     transition: all 0.3s ease;
-     /* background: var(--color-primary); */
- }
- 
- .nav.sticky {
-     padding: 1.5rem 0;
-     background: var(--color-primary);
- }
- 
- .nav.sticky .nav__item>a:hover {
-     color: black;
- }
- 
- .nav__item>a {
-     color: #fff;
-     font-size: 1.9rem;
-     font-weight: 500;
-     margin-left: 2.5rem;
-     transition: 0.3s ease;
- }
- 
- .nav.sticky .nav__brand>a span {
-     color: #fff;
-     transition: all 0.3s ease;
- }
- 
- .nav__item>a:hover {
-     color: var(--color-primary);
- }
- 
- .nav__brand>a {
-     color: #fff;
-     font-size: 3.5rem;
-     font-weight: 600;
- }
- 
- .nav__brand>a span {
-     color: var(--color-primary);
- }
- 
- .list {
-     list-style: none;
-     padding-left: 0;
- }
- 
- .nav__item {
-     display: inline-block;
- }
- /* responsive media query start for mobile & Tablet  */
- 
- @media (max-width: 947px) {
-     .nav__item {
-         display: block;
-         text-align: center;
-     }
-     .nav__item>a {
-         display: inline-block;
-         margin: 2rem 0;
-         font-size: 2.5rem;
-     }
- }
- 
- .max__width {
-     max-width: 1300px;
-     padding: 0 8rem;
-     margin: auto;
- }
- 
- @media (max-width: 1104px) {
-     .max__width {
-         margin-left: 0;
-     }
- }
- 
- @media (max-width: 947px) {
-     .max__width {
-         padding: 0 5rem;
-     }
- }
- 
- @media (max-width: 500px) {
-     .home__text-2 {
-         font-size: 5rem;
-     }
-     .home__text-3 {
-         font-size: 2.7rem;
-     }
- }
- /*
+    --color-primary: #FD023E;
+    /* --color-primary: #dc143c; */
+    --border-radius: 30px;
+}
+
+
+/* All Similar Content Styling Codes */
+
+section {
+    padding: 100px 0;
+}
+
+.max-width {
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+.main {
+    overflow: hidden;
+    /* For the animations ScrollReveal*/
+}
+
+.about,
+.services,
+.skills,
+.teams,
+.contact,
+footer {
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* All Similar Content Styling Codes End*/
+
+
+/*=============== Heder & Nav Start ===============*/
+
+.nav {
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 3rem 0;
+    transition: all 0.3s ease;
+    /* background: var(--color-primary); */
+}
+
+.nav.sticky {
+    padding: 1.5rem 0;
+    background: var(--color-primary);
+}
+
+.nav.sticky .nav__item>a:hover {
+    color: black;
+}
+
+.nav__item>a {
+    /* for navbar mobile menu button  */
+    display: block;
+    /* for navbar mobile menu button  */
+    color: #fff;
+    font-size: 1.9rem;
+    font-weight: 500;
+    margin-left: 2.5rem;
+    transition: 0.3s ease;
+}
+
+.nav.sticky .nav__brand>a span {
+    color: #fff;
+    transition: all 0.3s ease;
+}
+
+.nav__item>a:hover {
+    color: var(--color-primary);
+}
+
+.nav__brand>a {
+    color: #fff;
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+
+.nav__brand>a span {
+    color: var(--color-primary);
+}
+
+.list {
+    list-style: none;
+    padding-left: 0;
+}
+
+.nav__item {
+    display: inline-block;
+}
+
+
+/* responsive media query start for mobile & Tablet  */
+
+@media (max-width: 947px) {
+    .nav__item {
+        display: block;
+        text-align: center;
+    }
+    .nav__item>a {
+        display: inline-block;
+        margin: 2rem 0;
+        font-size: 2.5rem;
+    }
+}
+
+.max__width {
+    max-width: 1300px;
+    padding: 0 8rem;
+    margin: auto;
+}
+
+@media (max-width: 1104px) {
+    .max__width {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 947px) {
+    .max__width {
+        padding: 0 5rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .home__text-2 {
+        font-size: 5rem;
+    }
+    .home__text-3 {
+        font-size: 2.7rem;
+    }
+}
+
+
+/*
 responsive media query end for mobile & Tablet  */
- 
- .nav .max__width {
-     display: flex;
-     align-items: center;
-     justify-content: space-between;
- }
- /*=============== Heder & Nav End ===============*/
- /*========== Toogler Button styling Start ==========*/
- 
- .nav__toggler {
-     color: #fff;
-     font-size: 2.3rem;
-     cursor: pointer;
-     display: none;
- }
- 
- .nav__toggler i.active:before {
-     content: "\f00d";
- }
- /*=============== Scroll Button Start ===============*/
- 
- .scroll-up-btn {
-     position: fixed;
-     height: 4.5rem;
-     width: 4.2rem;
-     background: var(--color-primary);
-     right: 3rem;
-     bottom: 1rem;
-     color: #fff;
-     text-align: center;
-     line-height: 4.5rem;
-     z-index: 9999;
-     font-size: 3rem;
-     border-radius: 6px;
-     cursor: pointer;
-     opacity: 0;
-     pointer-events: none;
-     transition: all 0.3s ease;
- }
- 
- .scroll-up-btn.show {
-     bottom: 3rem;
-     opacity: 1;
-     pointer-events: auto;
- }
- /*=============== Scroll Button End ===============*/
- 
- @media (max-width: 947px) {
-     .nav__toggler {
-         display: block;
-         z-index: 999;
-     }
- }
- /*========== Toogler Button styling End ==========*/
- /*========== Home Section Start ==========*/
- 
- .home {
-     display: flex;
-     background: black;
-     height: 100vh;
-     color: #fff;
-     min-height: 50rem;
- }
- 
- .home .max__width {
-     /* margin: auto 0 auto 4rem; */
-     width: 100%;
-     display: flex;
- }
- 
- .home__text-1 {
-     font-size: 2.7rem;
- }
- 
- .home__text-2 {
-     font-size: 7.5rem;
-     font-weight: 600;
-     margin-left: -3px;
- }
- 
- .home__text-3 {
-     font-size: 4rem;
-     margin: .5rem 0;
- }
- /* responsive media query start for mobile & Tablet  */
- 
- @media (max-width:947px) {
-     .home__text-2 {
-         font-size: 7rem;
-     }
-     .home__text-3 {
-         font-size: 4rem;
-     }
- }
- 
- @media (max-width: 991px) {
-     .max__width {
-         padding: 0 5rem;
-     }
-     .home__text-2 {
-         font-size: 7.5rem;
-         font-weight: 600;
-         margin-left: -3px;
-     }
-     .home__text-3 {
-         font-size: 4rem;
-         margin: .5rem 0;
-     }
- }
- 
- @media (max-width: 690px) {
-     .max__width {
-         padding: 0 2.3rem;
-     }
-     .home__text-2 {
-         font-size: 6rem;
-     }
-     .home__text-3 {
-         font-size: 3.2rem;
-     }
- }
- 
- @media (max-width: 500px) {
-     .home__text-2 {
-         font-size: 5rem;
-     }
-     .home__text-3 {
-         font-size: 2.7rem;
-     }
- }
- /* responsive media query end for mobile & Tablet  */
- 
- .home__text-3>span {
-     color: var(--color-primary);
-     font-weight: 500;
- }
- 
- .btn {
-     display: inline-block;
-     background: var(--color-primary);
-     color: #fff;
-     border: 2px solid var(--color-primary);
-     font-size: 2.5rem;
-     padding: 1.2rem 3.6rem;
-     margin-top: 2rem;
-     border-radius: 6px;
-     transition: all 0.3s ease;
- }
- 
- .btn:hover {
-     color: var(--color-primary);
-     background: none;
- }
- /* responsive media query start for mobile & Tablet  */
- 
- @media (max-width: 947px) {
-     .btn {
-         font-size: 2rem;
-         padding: 1rem 3rem;
-     }
- }
- 
- @media (max-width: 690px) {
-     .max-width {
-         padding: 0 23px;
-     }
-     .btn {
-         font-size: 2rem;
-     }
- }
- /*========== Home Section End ==========*/
- /*=============== Navbar for Mobile & Tablet Start ===============*/
- 
- @media (max-width: 947px) {
-     .navbar__menu {
-         position: fixed;
-         height: 100vh;
-         width: 100%;
-         background: #111;
-         left: -100%;
-         top: 0px;
-         padding-top: 8rem;
-         transition: all 0.3s ease;
-     }
-     .navbar__menu.active {
-         left: 0;
-     }
- }
- /*=============== Navbar for Mobile & Tablet End ===============*/
- /*========== About Section Start ==========*/
- 
- .about,
- .services {
-     font-family: 'poping', sans-serif;
- }
- 
- section .title {
-     position: relative;
-     font-family: 'ubuntu', sans-serif;
-     text-align: center;
-     font-size: 4rem;
-     font-weight: 500;
-     margin-bottom: 6rem;
-     padding-bottom: 2rem;
- }
- 
- section .title::before {
-     content: "";
-     position: absolute;
-     bottom: 0px;
-     left: 50%;
-     width: 180px;
-     height: 3px;
-     background: #111;
-     transform: translateX(-50%);
- }
- 
- section .title::after {
-     position: absolute;
-     bottom: -8px;
-     left: 50%;
-     font-size: 20px;
-     color: crimson;
-     padding: 0 5px;
-     background: #fff;
-     transform: translateX(-50%);
- }
- 
- .about .title::after {
-     content: "who i am";
- }
- 
- .grid {
-     display: grid;
- }
- 
- .about__image>img {
-     height: 35rem;
-     width: 35rem;
-     object-fit: cover;
-     border-radius: .6rem;
-     display: block;
-     margin: 0 auto;
- }
- 
- .about__content {
-     margin-top: 3rem;
-     font-size: 3rem;
-     font-weight: 600;
-     margin-bottom: 1rem;
-     text-align: center;
- }
- 
- .about__content>span {
-     color: var(--color-primary);
- }
- 
- .column__right>p {
-     text-align: justify;
-     font-size: 2rem;
-     line-height: 1.4;
- }
- 
- .btn--secondary {
-     font-size: 2rem;
-     font-weight: 500;
-     padding: 1rem 3rem;
- }
- 
- @media screen and (min-width: 1024px) {
-     .grid--1x2 {
-         grid-template-columns: repeat(2, 1fr);
-     }
-     .about__image>img {
-         height: 40rem;
-         width: 40rem;
-     }
- }
- /*========== About Section End ==========*/
- /*========== Services Section Start ==========*/
- 
- .services,
- .teams {
-     color: #fff;
-     background: #111;
- }
- 
- .services .title::before,
- .teams .title::before {
-     background: #fff;
- }
- 
- .services .title::after,
- .teams .title::after {
-     background: #111;
-     content: "what i provide";
- }
- 
- .container {
-     display: grid;
-     gap: 4rem;
- }
- 
- .services__card {
-     /* width: calc(33% - 20px); */
-     background: #222;
-     text-align: center;
-     border-radius: 6px;
-     padding: 5rem 2.5rem;
-     cursor: pointer;
-     line-height: 1.5;
- }
- 
- .services__card i {
-     font-size: 5rem;
-     color: var(--color-primary);
-     transition: color 0.3s ease;
- }
- 
- .services__heading {
-     font-size: 2.5rem;
-     font-weight: 500;
-     margin: 1rem 0 .7rem 0;
- }
- 
- .services__box {
-     transition: all 0.3s ease;
- }
- 
- .services__box:hover {
-     transform: scale(1.05);
- }
- 
- .services__card:hover {
-     background: var(--color-primary);
-     transition: color 0.3s ease;
- }
- 
- .services__card:hover i {
-     color: #fff;
- }
- 
- .services__box P {
-     font-size: 1.7rem;
- }
- 
- @media screen and (min-width: 690px) {
-     .grid--1x3 {
-         grid-template-columns: repeat(2, 1fr);
-     }
- }
- 
- @media screen and (min-width: 1024px) {
-     .grid--1x3 {
-         grid-template-columns: repeat(3, 1fr);
-     }
- }
- /*========== Services Section End==========*/
- /*========== Skills Section Start ==========*/
- 
- .skills .title::after {
-     content: "what i know";
- }
- 
- .skills__bars {
-     margin-bottom: 1.5rem;
- }
- 
- .skills__info {
-     display: flex;
-     margin-bottom: 2rem;
-     align-items: center;
-     justify-content: space-between;
- }
- 
- .skills__right span {
-     font-size: 1.8rem;
-     font-weight: 500;
- }
- 
- .skills__column>p {
-     text-align: justify;
-     font-size: 1.8rem;
-     line-height: 1.4;
- }
- 
- .skills__right {
-     margin-top: 1rem;
- }
- 
- .skills__right .line {
-     height: .5rem;
-     width: 100%;
-     background: lightgray;
-     position: relative;
- }
- 
- .skills__right .line::before {
-     content: "";
-     position: absolute;
-     height: 100%;
-     left: 0;
-     top: 0;
-     background: var(--color-primary);
- }
- 
- .html::before {
-     width: 90%;
- }
- 
- .css::before {
-     width: 60%;
- }
- 
- .js::before {
-     width: 80%;
- }
- 
- .php::before {
-     width: 50%;
- }
- 
- .mysql::before {
-     width: 70%;
- }
- 
- .btn--skills {
-     font-size: 1.8rem;
-     padding: .8rem 1.6rem;
- }
- /*========== Skills Section End ==========*/
- /*========== Teams Section Start ==========*/
- 
- .teams .title::after {
-     content: "who with me";
- }
- 
- .teams__card {
-     background: #222;
-     border-radius: 6px;
-     padding: 2.5rem 3.5rem;
-     text-align: center;
-     transition: all 0.3s ease;
- }
- 
- .teams__card:hover {
-     background: var(--color-primary);
- }
- 
- .teams__box {
-     display: flex;
-     flex-direction: column;
-     align-items: center;
-     justify-content: center;
-     transition: all 0.3s ease;
- }
- 
- .teams__card:hover .teams__box {
-     transform: scale(1.1);
- }
- 
- .teams .carousel .teams__card img {
-     height: 15rem;
-     width: 15rem;
-     object-fit: cover;
-     border-radius: 50%;
-     border: 5px solid var(--color-primary);
-     transition: all 0.3s ease;
- }
- 
- .teams .carousel .teams__card img:hover {
-     border-color: #fff;
- }
- 
- .teams__text {
-     font-size: 2.5rem;
-     font-weight: 500;
-     margin: 1rem 0 .7rem 0;
- }
- 
- .owl-dots {
-     text-align: center;
-     margin-top: 2rem;
- }
- 
- .owl-dot {
-     height: 1.3rem;
-     width: 1.3rem;
-     outline: none!important;
-     border-radius: 50%;
-     margin: 0 5px;
-     border: 2px solid var(--color-primary)!important;
-     transition: all 0.3s ease;
- }
- 
- .owl-dot.active {
-     width: 3.5rem;
-     border-radius: 1.4rem;
- }
- 
- .owl-dot.active:hover {
-     background: var(--color-primary)!important;
- }
- /*========== Teams Section End ==========*/
- /*========== Contact Section Start ==========*/
- 
- .contact .title::after {
-     content: "get in touch";
- }
- 
- .contact__column-left>p {
-     text-align: justify;
-     font-size: 1.8rem;
-     line-height: 1.4;
- }
- 
- .contact__icons {
-     margin: 1rem 0;
- }
- 
- .contact__rows {
-     display: flex;
-     height: 6.5rem;
-     align-items: center;
- }
- 
- .contact__info {
-     font-size: 1.8rem;
-     margin-left: 3rem;
- }
- 
- .contact__rows i {
-     font-size: 2.5rem;
-     color: var(--color-primary);
- }
- 
- .contact__info .head {
-     font-weight: 600;
- }
- 
- .contact__info .sub-title {
-     color: #333;
- }
- 
- .contact__fields {
-     display: flex;
- }
- 
- .contact__fields,
- .contact__field {
-     height: 4.5rem;
-     width: 100%;
-     margin-bottom: 1.5rem;
- }
- 
- .textarea {
-     height: 8rem;
-     width: 100%;
- }
- 
- textarea {
-     padding-top: 1rem;
-     resize: none;
- }
- 
- .contact__fields .name {
-     margin-right: 1rem;
- }
- 
- .contact__fields .email {
-     margin-left: 1rem;
- }
- 
- input,
- textarea {
-     height: 100%;
-     width: 100%;
-     border: 1px solid lightgray;
-     border-radius: 6px;
-     outline: none;
-     padding: 0 1.5rem;
-     font-size: 1.8rem;
- }
- 
- .btn--form {
-     font-size: 1.8rem;
-     padding: 1.4rem 1.6rem;
-     margin-top: 0;
- }
- /*========== Contact Section End ==========*/
- /*========== Footer Section Start ==========*/
- 
- footer {
-     background: #111;
-     padding: 2rem 2.3rem;
-     color: #fff;
- }
- 
- footer a {
-     color: var(--color-primary);
- }
- 
- footer a:hover {
-     text-decoration: underline;
- }
- /*========== Footer Section End ==========*/
+
+.nav .max__width {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+/*=============== Heder & Nav End ===============*/
+
+
+/*========== Toogler Button styling Start ==========*/
+
+.nav__toggler {
+    color: #fff;
+    font-size: 2.3rem;
+    cursor: pointer;
+    display: none;
+}
+
+.nav__toggler i.active:before {
+    content: "\f00d";
+}
+
+
+/*=============== Scroll Button Start ===============*/
+
+.scroll-up-btn {
+    position: fixed;
+    height: 4.5rem;
+    width: 4.2rem;
+    background: var(--color-primary);
+    right: 3rem;
+    bottom: 1rem;
+    color: #fff;
+    text-align: center;
+    line-height: 4.5rem;
+    z-index: 9999;
+    font-size: 3rem;
+    border-radius: 6px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.scroll-up-btn.show {
+    bottom: 3rem;
+    opacity: 1;
+    pointer-events: auto;
+}
+
+
+/*=============== Scroll Button End ===============*/
+
+@media (max-width: 947px) {
+    .nav__toggler {
+        display: block;
+        z-index: 999;
+    }
+}
+
+
+/*========== Toogler Button styling End ==========*/
+
+
+/*========== Home Section Start ==========*/
+
+.home {
+    display: flex;
+    background: url("../images/banner.png") no-repeat center;
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+    min-height: 50rem;
+}
+
+.home .max__width {
+    /* margin: auto 0 auto 4rem; */
+    width: 100%;
+    /* display: flex; */
+}
+
+.home__text-1 {
+    font-size: 2.7rem;
+}
+
+.home__text-2 {
+    font-size: 7.5rem;
+    font-weight: 600;
+    margin-left: -3px;
+}
+
+.home__text-3 {
+    font-size: 4rem;
+    margin: .5rem 0;
+}
+
+
+/* responsive media query start for mobile & Tablet  */
+
+@media (max-width:947px) {
+    .home__text-2 {
+        font-size: 7rem;
+    }
+    .home__text-3 {
+        font-size: 4rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .max__width {
+        padding: 0 5rem;
+    }
+    .home__text-2 {
+        font-size: 7.5rem;
+        font-weight: 600;
+        margin-left: -3px;
+    }
+    .home__text-3 {
+        font-size: 4rem;
+        margin: .5rem 0;
+    }
+}
+
+@media (max-width: 690px) {
+    .max__width {
+        padding: 0 2.3rem;
+    }
+    .home__text-2 {
+        font-size: 6rem;
+    }
+    .home__text-3 {
+        font-size: 3.2rem;
+    }
+}
+
+@media (max-width: 500px) {
+    .home__text-2 {
+        font-size: 5rem;
+    }
+    .home__text-3 {
+        font-size: 2.7rem;
+    }
+}
+
+
+/* responsive media query end for mobile & Tablet  */
+
+.home__text-3>span {
+    color: var(--color-primary);
+    font-weight: 500;
+}
+
+.btn {
+    display: inline-block;
+    background: var(--color-primary);
+    color: #fff;
+    border: 2px solid var(--color-primary);
+    font-size: 2.5rem;
+    padding: 1.2rem 3.6rem;
+    margin-top: 2rem;
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    color: var(--color-primary);
+    background: none;
+}
+
+
+/* responsive media query start for mobile & Tablet  */
+
+@media (max-width: 947px) {
+    .btn {
+        font-size: 2rem;
+        padding: 1rem 3rem;
+    }
+}
+
+@media (max-width: 690px) {
+    .max-width {
+        padding: 0 23px;
+    }
+    .btn {
+        font-size: 2rem;
+    }
+}
+
+
+/*========== Home Section End ==========*/
+
+
+/*=============== Navbar for Mobile & Tablet Start ===============*/
+
+@media (max-width: 947px) {
+    .navbar__menu {
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        background: #111;
+        left: -100%;
+        top: 0px;
+        padding-top: 8rem;
+        transition: all 0.3s ease;
+    }
+    .navbar__menu.active {
+        left: 0;
+    }
+}
+
+
+/*=============== Navbar for Mobile & Tablet End ===============*/
+
+
+/*========== About Section Start ==========*/
+
+.about,
+.services {
+    font-family: 'poping', sans-serif;
+}
+
+section .title {
+    position: relative;
+    font-family: 'ubuntu', sans-serif;
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 500;
+    margin-bottom: 6rem;
+    padding-bottom: 2rem;
+}
+
+section .title::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+}
+
+section .title::after {
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    font-size: 20px;
+    color: crimson;
+    padding: 0 5px;
+    background: #fff;
+    transform: translateX(-50%);
+}
+
+.about .title::after {
+    content: "who i am";
+}
+
+.grid {
+    display: grid;
+}
+
+.about__image>img {
+    height: 35rem;
+    width: 35rem;
+    object-fit: cover;
+    border-radius: .6rem;
+    display: block;
+    margin: 0 auto;
+}
+
+.about__content {
+    margin-top: 3rem;
+    font-size: 3rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.about__content>span {
+    color: var(--color-primary);
+}
+
+.column__right>p {
+    text-align: justify;
+    font-size: 2rem;
+    line-height: 1.4;
+}
+
+.btn--secondary {
+    font-size: 2rem;
+    font-weight: 500;
+    padding: 1rem 3rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .grid--1x2 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .about__image>img {
+        height: 40rem;
+        width: 40rem;
+    }
+}
+
+
+/*========== About Section End ==========*/
+
+
+/*========== Services Section Start ==========*/
+
+.services,
+.teams {
+    color: #fff;
+    background: #111;
+}
+
+.services .title::before,
+.teams .title::before {
+    background: #fff;
+}
+
+.services .title::after,
+.teams .title::after {
+    background: #111;
+    content: "what i provide";
+}
+
+.container {
+    display: grid;
+    gap: 4rem;
+}
+
+.services__card {
+    /* width: calc(33% - 20px); */
+    background: #222;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5rem 2.5rem;
+    cursor: pointer;
+    line-height: 1.5;
+}
+
+.services__card i {
+    font-size: 5rem;
+    color: var(--color-primary);
+    transition: color 0.3s ease;
+}
+
+.services__heading {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin: 1rem 0 .7rem 0;
+}
+
+.services__box {
+    transition: all 0.3s ease;
+}
+
+.services__box:hover {
+    transform: scale(1.05);
+}
+
+.services__card:hover {
+    background: var(--color-primary);
+    transition: color 0.3s ease;
+}
+
+.services__card:hover i {
+    color: #fff;
+}
+
+.services__box P {
+    font-size: 1.7rem;
+}
+
+@media screen and (min-width: 690px) {
+    .grid--1x3 {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .grid--1x3 {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+
+/*========== Services Section End==========*/
+
+
+/*========== Skills Section Start ==========*/
+
+.skills .title::after {
+    content: "what i know";
+}
+
+.skills__bars {
+    margin-bottom: 1.5rem;
+}
+
+.skills__info {
+    display: flex;
+    margin-bottom: 2rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.skills__right span {
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.skills__column>p {
+    text-align: justify;
+    font-size: 1.8rem;
+    line-height: 1.4;
+}
+
+.skills__right {
+    margin-top: 1rem;
+}
+
+.skills__right .line {
+    height: .5rem;
+    width: 100%;
+    background: lightgray;
+    position: relative;
+}
+
+.skills__right .line::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: var(--color-primary);
+}
+
+.html::before {
+    width: 90%;
+}
+
+.css::before {
+    width: 60%;
+}
+
+.js::before {
+    width: 80%;
+}
+
+.php::before {
+    width: 50%;
+}
+
+.mysql::before {
+    width: 70%;
+}
+
+.btn--skills {
+    font-size: 1.8rem;
+    padding: .8rem 1.6rem;
+}
+
+
+/*========== Skills Section End ==========*/
+
+
+/*========== Teams Section Start ==========*/
+
+.teams .title::after {
+    content: "who with me";
+}
+
+.teams__card {
+    background: #222;
+    border-radius: 6px;
+    padding: 2.5rem 3.5rem;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.teams__card:hover {
+    background: var(--color-primary);
+}
+
+.teams__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.teams__card:hover .teams__box {
+    transform: scale(1.1);
+}
+
+.teams .carousel .teams__card img {
+    height: 15rem;
+    width: 15rem;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid var(--color-primary);
+    transition: all 0.3s ease;
+}
+
+.teams .carousel .teams__card img:hover {
+    border-color: #fff;
+}
+
+.teams__text {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin: 1rem 0 .7rem 0;
+}
+
+.owl-dots {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.owl-dot {
+    height: 1.3rem;
+    width: 1.3rem;
+    outline: none!important;
+    border-radius: 50%;
+    margin: 0 5px;
+    border: 2px solid var(--color-primary)!important;
+    transition: all 0.3s ease;
+}
+
+.owl-dot.active {
+    width: 3.5rem;
+    border-radius: 1.4rem;
+}
+
+.owl-dot.active:hover {
+    background: var(--color-primary)!important;
+}
+
+
+/*========== Teams Section End ==========*/
+
+
+/*========== Contact Section Start ==========*/
+
+.contact .title::after {
+    content: "get in touch";
+}
+
+.contact__column-left>p {
+    text-align: justify;
+    font-size: 1.8rem;
+    line-height: 1.4;
+}
+
+.contact__icons {
+    margin: 1rem 0;
+}
+
+.contact__rows {
+    display: flex;
+    height: 6.5rem;
+    align-items: center;
+}
+
+.contact__info {
+    font-size: 1.8rem;
+    margin-left: 3rem;
+}
+
+.contact__rows i {
+    font-size: 2.5rem;
+    color: var(--color-primary);
+}
+
+.contact__info .head {
+    font-weight: 600;
+}
+
+.contact__info .sub-title {
+    color: #333;
+}
+
+.contact__fields {
+    display: flex;
+}
+
+.contact__fields,
+.contact__field {
+    height: 4.5rem;
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.textarea {
+    height: 8rem;
+    width: 100%;
+}
+
+textarea {
+    padding-top: 1rem;
+    resize: none;
+}
+
+.contact__fields .name {
+    margin-right: 1rem;
+}
+
+.contact__fields .email {
+    margin-left: 1rem;
+}
+
+input,
+textarea {
+    height: 100%;
+    width: 100%;
+    border: 1px solid lightgray;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 1.5rem;
+    font-size: 1.8rem;
+}
+
+.btn--form {
+    font-size: 1.8rem;
+    padding: 1.4rem 1.6rem;
+    margin-top: 0;
+}
+
+
+/*========== Contact Section End ==========*/
+
+
+/*========== Footer Section Start ==========*/
+
+footer {
+    background: #111;
+    padding: 2rem 2.3rem;
+    color: #fff;
+}
+
+footer a {
+    color: var(--color-primary);
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+
+/*========== Footer Section End ==========*/
