@@ -288,7 +288,7 @@ responsive media query end for mobile & Tablet  */
  }
  
  .home__text-3 {
-     font-size: 3rem;
+     font-size: 4rem;
      margin: .5rem 0;
  }
  /* responsive media query start for mobile & Tablet  */
@@ -298,7 +298,7 @@ responsive media query end for mobile & Tablet  */
          font-size: 7rem;
      }
      .home__text-3 {
-         font-size: 3.5rem;
+         font-size: 4rem;
      }
  }
  
@@ -312,7 +312,7 @@ responsive media query end for mobile & Tablet  */
          margin-left: -3px;
      }
      .home__text-3 {
-         font-size: 3rem;
+         font-size: 4rem;
          margin: .5rem 0;
      }
  }
