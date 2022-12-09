@@ -7,9 +7,12 @@ $(document).ready(function() {
         } else {
             $('.nav').removeClass("sticky");
         }
-    })
 
-    // toogle menu /nvabar script 
+
+    });
+
+
+    // toogle menu /navabar script 
     $('.nav__toggler').click(function() {
             $('.navbar__menu').toggleClass("active");
             // for closing menu button x

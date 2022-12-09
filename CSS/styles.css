@@ -770,3 +770,19 @@ responsive media query end for mobile & Tablet  */
      margin-top: 0;
  }
  /*========== Contact Section End ==========*/
+ /*========== Footer Section Start ==========*/
+ 
+ footer {
+     background: #111;
+     padding: 2rem 2.3rem;
+     color: #fff;
+ }
+ 
+ footer a {
+     color: var(--color-primary);
+ }
+ 
+ footer a:hover {
+     text-decoration: underline;
+ }
+ /*========== Footer Section End ==========*/
