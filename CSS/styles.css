@@ -499,10 +499,9 @@ section .title::after {
 
 .about__content {
     margin-top: 3rem;
-    font-size: 2.4rem;
+    font-size: 2.6rem;
     font-weight: 600;
     margin-bottom: 1rem;
-    /* text-align: center; */
 }
 
 .about__content>span {
@@ -641,7 +640,7 @@ section .title::after {
 
 .skills__column>p {
     text-align: justify;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     line-height: 1.4;
 }
 
