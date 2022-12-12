@@ -502,7 +502,7 @@ section .title::after {
     font-size: 2.4rem;
     font-weight: 600;
     margin-bottom: 1rem;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .about__content>span {
