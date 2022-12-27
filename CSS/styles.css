@@ -369,6 +369,10 @@ responsive media query end for mobile & Tablet  */
     .home__text-3 {
         font-size: 2.7rem;
     }
+    .home {
+        display: flex;
+        background: url("../images/banner-2.png") no-repeat center;
+    }
 }
 
 
