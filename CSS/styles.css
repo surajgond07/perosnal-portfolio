@@ -375,6 +375,9 @@ responsive media query end for mobile & Tablet  */
         height: 100vh;
         background-size: cover;
     }
+    .home__content {
+        margin-top: 20rem;
+    }
 }
 
 
