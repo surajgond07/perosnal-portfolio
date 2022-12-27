@@ -47,15 +47,18 @@ $(document).ready(function() {
 
     // owl carousel script
     $('.carousel').owlCarousel({
+        items: 3,
         margin: 20,
         loop: true,
+        nav: false,
+        rtl: false,
         autoplay: true,
-        autoplayTimeOut: 2000,
+        autoplayTimeout: 1000,
         autoplayHoverPause: true,
         responsive: {
             0: {
                 items: 1,
-                nav: false
+                // nav: true
             },
             600: {
                 items: 2,
@@ -63,9 +66,11 @@ $(document).ready(function() {
             },
             1000: {
                 items: 3,
-                nav: false
+                // nav: true,
+                loop: true
             }
         }
+
     });
 
 });
